@@ -7,4 +7,4 @@
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
 	url = git://github.com/rgozim/ice-builder-gradle
-	branch = develop
+	branch = build
