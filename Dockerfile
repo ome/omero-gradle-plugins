@@ -37,6 +37,5 @@ COPY --chown=1000:1000 .gitmodules /src/.gitmodules
 RUN git submodule update --init
 
 # Build all
-RUN cd omero-dsl && gradle publishToMavenLocal
-RUN cd omero-blitz-plugin && gradle publishToMavenLocal
-RUN cd ice-builder-gradle && gradle publishToMavenLocal
+COPY --chown=1000:1000 build.sh /src/build.sh
+RUN ./build.sh
