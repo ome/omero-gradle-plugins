@@ -7,6 +7,6 @@ set -x
 for x in omero-dsl omero-blitz-plugin ice-builder-gradle;
 do
     pushd $x
-    gradle publishToMavenLocal
+    ./gradlew publishToMavenLocal
     popd 
 done
