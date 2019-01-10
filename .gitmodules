@@ -6,5 +6,5 @@
 	url = git://github.com/ome/omero-blitz-plugin
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
-	url = git://github.com/rgozim/ice-builder-gradle
-	branch = build
+	url = git://github.com/ome/ice-builder-gradle.git
+	branch = master
