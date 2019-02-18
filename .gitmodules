@@ -1,9 +1,11 @@
-[submodule "omero-dsl"]
-	path = omero-dsl
-	url = git://github.com/ome/omero-dsl
+[submodule "omero-dsl-plugin"]
+	path = omero-dsl-plugin
+	url = git://github.com/joshmoore/omero-dsl-plugin
+        branch = squashed
 [submodule "omero-blitz-plugin"]
 	path = omero-blitz-plugin
-	url = git://github.com/ome/omero-blitz-plugin
+	url = git://github.com/joshmoore/omero-blitz-plugin
+        branch = squashed
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
 	url = git://github.com/ome/ice-builder-gradle.git

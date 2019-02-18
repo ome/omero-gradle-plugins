@@ -18,7 +18,7 @@ ARG IMAGE=openjdk:8-jre-alpine
 
 # Similarly, the BUILD_IMAGE argument can be overwritten
 # but this is generally not needed.
-ARG BUILD_IMAGE=gradle:jdk8
+ARG BUILD_IMAGE=gradle:5.1.1-jdk8
 
 #
 # Build phase: Use the gradle image for building.
