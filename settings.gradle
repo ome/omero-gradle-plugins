@@ -8,7 +8,9 @@
  */
 
 includeBuild "ice-builder-gradle"
+includeBuild "omero-dsl-plugin"
+includeBuild "omero-api-plugin"
 includeBuild "omero-blitz-plugin"
-includeBuild "omero-dsl"
+includeBuild "omero-artifact-plugin"
 
 rootProject.name = 'omero-gradle-plugins'
