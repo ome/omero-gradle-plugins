@@ -1,12 +1,12 @@
 [submodule "omero-dsl-plugin"]
 	path = omero-dsl-plugin
-	url = git://github.com/ome/omero-dsl-plugin
+	url = git://github.com/rgozim/omero-dsl-plugin
         branch = master
 [submodule "omero-blitz-plugin"]
 	path = omero-blitz-plugin
-	url = git://github.com/ome/omero-blitz-plugin
+	url = git://github.com/rgozim/omero-blitz-plugin
         branch = master
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
-	url = git://github.com/ome/ice-builder-gradle.git
+	url = git://github.com/rgozim/ice-builder-gradle.git
 	branch = master
