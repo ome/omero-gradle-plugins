@@ -1,6 +1,6 @@
-[submodule "omero-dsl-plugin"]
-	path = omero-dsl-plugin
-	url = git@github.com:rgozim/omero-dsl-plugin
+[submodule "omero-ome.dsl-plugin"]
+	path = omero-ome.dsl-plugin
+	url = git@github.com:rgozim/omero-ome.dsl-plugin
 [submodule "omero-api-plugin"]
 	path = omero-api-plugin
 	url = git@github.com:rgozim/omero-api-plugin.git
