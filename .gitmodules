@@ -1,16 +1,16 @@
 [submodule "omero-dsl-plugin"]
 	path = omero-dsl-plugin
-	url = git@github.com:rgozim/omero-dsl-plugin
+	url = https://github.com/rgozim/omero-dsl-plugin
 [submodule "omero-api-plugin"]
 	path = omero-api-plugin
-	url = git@github.com:rgozim/omero-api-plugin
+	url = https://github.com/rgozim/omero-api-plugin
 [submodule "omero-blitz-plugin"]
 	path = omero-blitz-plugin
-	url = git@github.com:rgozim/omero-blitz-plugin
+	url = https://github.com/rgozim/omero-blitz-plugin
 [submodule "omero-artifact-plugin"]
 	path = omero-artifact-plugin
-	url = git@github.com:rgozim/omero-artifact-plugin
+	url = https://github.com/rgozim/omero-artifact-plugin
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
-	url = git@github.com:rgozim/ice-builder-gradle
+	url = https://github.com/rgozim/ice-builder-gradle
 	branch = master
