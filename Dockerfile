@@ -34,8 +34,6 @@ USER 1000
 WORKDIR /src
 COPY --chown=1000:1000 .git /src/.git
 COPY --chown=1000:1000 .gitmodules /src/.gitmodules
+COPY --chown=1000:1000 *.gradle /src/
 RUN git submodule update --init
-
-# Build all
-COPY --chown=1000:1000 build.sh /src/build.sh
-RUN ./build.sh
+RUN gradle --no-daemon publishToMavenLocal
