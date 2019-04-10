@@ -14,7 +14,12 @@
 	path = omero-artifact-plugin
 	url = https://github.com/ome/omero-artifact-plugin
 	branch = master
+[submodule "omero-javapackager-plugin"]
+	path = omero-javapackager-plugin
+	url = https://github.com/ome/omero-javapackager-plugin.git
+	branch = master
 [submodule "ice-builder-gradle"]
 	path = ice-builder-gradle
 	url = https://github.com/ome/ice-builder-gradle
 	branch = master
+
