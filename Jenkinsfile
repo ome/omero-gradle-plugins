@@ -23,7 +23,7 @@ pipeline {
         stage('Versions') {
             steps {
 
-                copyArtifacts(projectName: 'BIOFORMATS-build', flatten: true, filter: 'target/version.properties')
+                copyArtifacts(projectName: 'BIOFORMATS-push', flatten: true, filter: 'target/version.properties')
 
                 // build is in .gitignore so we can use it as a temp dir
                 sh """
