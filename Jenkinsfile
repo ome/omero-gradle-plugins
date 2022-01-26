@@ -41,7 +41,10 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'gradle --init-script init-ci.gradle publishToMavenLocal'
+                sh '''
+                   git submodule update --init --recursive
+                   gradle --init-script init-ci.gradle publishToMavenLocal
+                   '''
             }
         }
         stage('Deploy') {
