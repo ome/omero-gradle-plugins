@@ -22,9 +22,7 @@ pipeline {
     stages {
         stage('Versions') {
             steps {
-
-                copyArtifacts(projectName: 'BIOFORMATS-push', flatten: true, filter: 'target/version.properties')
-
+                copyArtifacts(projectName: 'BIOFORMATS-push', target: 'target/version.properties')
                 // build is in .gitignore so we can use it as a temp dir
                 sh """
                     mkdir ${env.WORKSPACE}/build
@@ -32,7 +30,7 @@ pipeline {
                     export PATH=$PATH:${env.WORKSPACE}/build/build-infra-master/
                     cd ..
                     # Workaround for "unflattened" file, possibly due to matrix
-                    find . -name version.properties -exec cp {} . \\;
+                    find . -name version.properties -mindepth 2 -exec cp -i -r -- {} . \\;
                     test -e version.properties
                     foreach-get-version-as-property >> version.properties
                 """
