@@ -24,6 +24,7 @@ pipeline {
             steps {
 
                 copyArtifacts(projectName: 'BIOFORMATS-push', flatten: true, filter: 'target/version.properties')
+                copyArtifacts(projectName: 'OMERO-zarr-pixel-buffer-push', flatten: true, filter: '**/version.tsv')
 
                 // build is in .gitignore so we can use it as a temp dir
                 sh """
